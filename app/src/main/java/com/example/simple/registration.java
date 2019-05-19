@@ -1,5 +1,6 @@
 package com.example.simple;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -78,7 +79,8 @@ public class registration extends AppCompatActivity  implements View.OnClickList
         }
         if(view==login_here)
         {
-
+            Intent i = new Intent(registration.this, Login.class);
+            startActivity(i);
         }
     }
 

@@ -12,41 +12,44 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_weight="1"
-        app:srcCompat="@mipmap/dream2pic" />
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/betrally_india_logo_square" />
 
     <TextView
-        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="6dp"
-        android:text="Welcome to Dream2 app" />
+        android:text="welcome to dream app"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="@+id/imageView"/>
+
+
+
     <LinearLayout
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignBottom="@+id/imageView"
+    android:layout_marginBottom="16dp">
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="new user"
-            android:id="@+id/new_user"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_weight="1"
-            android:text="Already user"
-            android:id="@+id/Already_user"/>
+        android:text="new user"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/new_user"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:text="Already user"
+        android:id="@+id/Already_user"/>
 
-
-    </LinearLayout>
-
-
+</LinearLayout>
 
 
 </RelativeLayout>
