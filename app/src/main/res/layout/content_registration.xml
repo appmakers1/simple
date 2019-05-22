@@ -10,7 +10,27 @@
     tools:showIn="@layout/activity_registration"
     android:paddingLeft="45dp"
     android:paddingRight="45dp"
-    android:paddingTop="200dp">
+    android:paddingTop="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="45dp"
+        >
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/google_singin"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Facebook"/>
+
+    </LinearLayout>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,4 +87,6 @@
 
     </LinearLayout>
 
-    </LinearLayout>
+
+
+</LinearLayout>

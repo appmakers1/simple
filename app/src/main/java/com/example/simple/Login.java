@@ -21,6 +21,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        if(view==login_Button)
         Toast.makeText(Login.this,"login successful",Toast.LENGTH_SHORT).show();
     }
 }
