@@ -15,11 +15,13 @@
          android:layout_marginBottom="40dp"/>
 
     <EditText
+        android:id="@+id/email_no"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="email/mobile number" />
 
     <EditText
+        android:id="@+id/pass_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"

@@ -5,5 +5,12 @@
     <string name="title_activity_main_activity2">main_activity2</string>
     <string name="facebook_app_id">374308343186534</string>
     <string name="fb_login_protocol_scheme">fb374308343186534</string>
+    <string name="title_activity_otp_verify">Verification</string>
 
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="passworderror">Enter Some Password</string>
+    <string name="mobileerror">Enter Valid Mobile Number</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>

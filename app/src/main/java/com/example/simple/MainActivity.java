@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         existing.setOnClickListener(new TextView.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in= new Intent(MainActivity.this, main_activity2.class);
+                Intent in = new Intent(MainActivity.this, main_activity2.class);
                 startActivity(in);
 
             }
