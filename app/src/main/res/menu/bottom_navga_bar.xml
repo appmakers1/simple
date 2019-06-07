@@ -4,30 +4,15 @@
 
 
     <item
-        android:id="@+id/my_profile"
-        android:title="My Profile"
-        android:icon="@mipmap/user"
-
-        />
+        android:id="@+id/home"
+        android:icon="@mipmap/home"
+        android:title="Home" />
     <item
-        android:id="@+id/my_balance"
-        android:icon="@mipmap/purse"
-        android:title="MyBalance" />
+        android:id="@+id/my_matches"
+        android:icon="@mipmap/trophy"
+        android:title="My Matches" />
     <item
-        android:id="@+id/reward_offers"
-        android:title="My Rewards and Offers"
-        android:icon="@mipmap/bonus"/>
-    <item
-        android:id="@+id/referrals"
-        android:icon="@mipmap/collaboration"
-        android:title="My Referrals" />
-    <item
-        android:id="@+id/settings"
-        android:icon="@mipmap/settings"
-        android:title="Settings" />
-    <item
-        android:id="@+id/points"
-        android:title="Points System"
-        android:icon="@mipmap/calculator"/>
-
+        android:id="@+id/more"
+        android:icon="@mipmap/ellipsis"
+        android:title="More" />
 </menu>
