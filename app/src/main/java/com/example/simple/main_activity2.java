@@ -31,6 +31,8 @@ public class main_activity2 extends AppCompatActivity {
     private MatchesFragment matchesFragment;
     private HomeFragment homeFragment;
     private static final String TAG="rohith";
+    // url for cricket matches
+    private static final String CRIC_URL="https://cricapi.com/api/matches?apikey=4abtK9oio2g3oCOJ1KaSaFcyrI43";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
