@@ -34,10 +34,10 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
     implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
 
-    compile 'com.basgeekball:awesome-validation:2.0'
+    implementation 'com.basgeekball:awesome-validation:2.0'
     //for json parsing this libaries are required
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
 
 }
 configurations.all {
