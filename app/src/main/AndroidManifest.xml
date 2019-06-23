@@ -21,7 +21,9 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".main_activity2">
+
+        <activity
+            android:name=".main_activity2">
 
         </activity>
         <activity android:name=".Login">

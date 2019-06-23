@@ -28,7 +28,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="16dp"
-                android:src="@drawable/india_icon" />
+                android:src="@drawable/india" />
 
 
             <TextView
@@ -67,7 +67,7 @@
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="16dp"
-                android:src="@drawable/india_icon" />
+                android:src="@drawable/india" />
         </RelativeLayout>
     </LinearLayout>
 
