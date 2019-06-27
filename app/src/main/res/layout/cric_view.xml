@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/rectangle">
 
     <TextView
+        android:id="@+id/type"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:paddingStart="16dp"
         android:layout_weight="1"
         tools:text="T20 Mumbai" />
 
@@ -24,7 +28,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/team1"
+                android:id="@+id/team1_image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="16dp"
@@ -36,19 +40,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:layout_toEndOf="@id/team1"
+                android:layout_toEndOf="@id/team1_image"
                 android:gravity="center_vertical"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                tools:text="ind" />
+                tools:text="Australia" />
 
             <TextView
-                android:id="@+id/time_left"
+                android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="90dp"
-                tools:text="time left" />
+                tools:text="time left"
+                android:textSize="14sp"/>
 
             <TextView
                 android:id="@+id/team2_name"
@@ -56,19 +61,22 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:layout_toLeftOf="@id/team2"
-                android:textSize="20sp"
+                android:layout_toLeftOf="@id/team2_image"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                tools:text="ind" />
+                tools:text="india" />
 
             <ImageView
-                android:id="@+id/team2"
+                android:id="@+id/team2_image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/india" />
+
         </RelativeLayout>
+
     </LinearLayout>
+
 
 </LinearLayout>

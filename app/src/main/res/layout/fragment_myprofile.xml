@@ -24,6 +24,7 @@
             android:scaleType="centerInside"/>
 
         </RelativeLayout>
+
     </RelativeLayout>
 
 </FrameLayout>

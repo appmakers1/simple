@@ -17,4 +17,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_matches">My Matches</string>
+    <string name="title_activity_bet_activity">Bet_activity</string>
+    <string name="question1">Which team will win the toss?</string>
+    <string name="question2">Which team will win the match?</string>
 </resources>

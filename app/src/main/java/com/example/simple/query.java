@@ -25,7 +25,7 @@ public class query {
     }
 
     // json parsing and url connection
-    public static List<cricMatch> fetchEarthquakeData(String requestUrl)
+    public static List<cricMatch> fetchData(String requestUrl)
     {
         // Create URL object
         URL url = createUrl(requestUrl);
@@ -44,10 +44,12 @@ public class query {
         // Return the list of {@link Earthquake}s
         return cricMatches;
     }
+
     public static URL createUrl(String stringUrl) {
         URL url = null;
         try {
             url = new URL(stringUrl);
+            Log.i(TAG,"url creation success");
         } catch (MalformedURLException e) {
             Log.e(TAG, "Problem building the URL ", e);
         }
@@ -67,13 +69,14 @@ public class query {
         InputStream inputStream=null;
         try{
             urlConnection=(HttpURLConnection) url.openConnection();
+            urlConnection.setRequestMethod("GET");
             urlConnection.setReadTimeout(10000);
             urlConnection.setConnectTimeout(15000);
-            urlConnection.setRequestMethod("GET");
             urlConnection.connect();
             if (urlConnection.getResponseCode() == 200) {
                 inputStream = urlConnection.getInputStream();
                 jsonResponse = readFromStream(inputStream);
+                Log.i(TAG,"httpconnection success");
             } else {
                 Log.e(TAG, "Error response code: " + urlConnection.getResponseCode());
             }
@@ -96,6 +99,7 @@ public class query {
         }
         return jsonResponse;
     }
+
     public static  String readFromStream(InputStream inputStream) throws IOException
     {
         StringBuilder output=new StringBuilder();
@@ -111,6 +115,7 @@ public class query {
         }
         return  output.toString();
     }
+
     public static  List<cricMatch> extractFeatureFromJson(String cricMatchJson)
     {
         if(TextUtils.isEmpty(cricMatchJson))
